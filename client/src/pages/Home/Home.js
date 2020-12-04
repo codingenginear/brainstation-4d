@@ -1,15 +1,10 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 import Product from "../../components/Product/Product";
 import "./Home.scss";
 import StickyAddToCart from "../../components/StickyAddToCart/StickyAddToCart";
+import Calculator from "../../components/Calculator/Calculator";
 
-function Home() {
-  const [showCalculator, setShowCalculator] = useState(false);
-
-  const handleShowCalculator = () => {
-    showCalculator ? setShowCalculator(false) : setShowCalculator(true);
-  };
-
+function Home({ handleShowCalculator, showCalculator }) {
   return (
     <Fragment>
       <Product />
@@ -18,6 +13,10 @@ function Home() {
         handleShowCalculator={handleShowCalculator}
         showCalculator={showCalculator}
       />
+
+      {showCalculator && (
+        <Calculator handleShowCalculator={handleShowCalculator} />
+      )}
     </Fragment>
   );
 }

@@ -2,7 +2,11 @@
 
 .sticky-add-to-cart {
   padding: 0 12px;
-  margin-bottom: 8px;
+  background-color: color(global-white);
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid color(regular-black);
+  padding-top: 1rem;
 
   &__container {
     display: flex;
@@ -17,6 +21,7 @@
     border-radius: 20px;
     color: #ffffff;
     font-size: 12px;
+    margin-right: 1rem;
   }
 
   &__find {

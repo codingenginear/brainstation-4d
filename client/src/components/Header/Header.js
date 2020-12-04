@@ -7,7 +7,7 @@ import "./Header.scss";
 import searchIcon from "../../assets/icons/search.svg";
 import backIcon from "../../assets/icons/backarrow.svg";
 
-function Header() {
+function Header({ handleShowCalculator }) {
   return (
     <header className='header'>
       <div className='header-top'>
@@ -30,6 +30,7 @@ function Header() {
             src={calculatorIcon}
             alt='calculatorIcon'
             className='header-top__calculator-icon'
+            onClick={handleShowCalculator}
           />
           <img
             src={cartIcon}

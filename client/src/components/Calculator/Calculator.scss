@@ -1,7 +1,29 @@
 @use '../../partials/typography'as *;
 
+.calculator-overlay {
+  top: 0;
+  position: fixed;
+  left: 0;
+  z-index: 9999;
+  background: rgb(19 24 44 / 0.7);
+  width: 100%;
+  height: 100vh;
+}
+
 .calculator {
   padding: 0 12px;
+  position: absolute;
+  z-index: 9999;
+  background: color(global-white);
+  bottom: 0;
+  width: 91%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
 
   &__home-indicator {
     display: flex;
@@ -24,7 +46,7 @@
 }
 
 .calculator-budget {
-  &__slide {
+  &__slider {
     width: 100%;
   }
 
