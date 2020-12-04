@@ -2,7 +2,7 @@ import React from "react";
 import "./Calculator.scss";
 import homeIcon from "../../assets/icons/homeIcon.svg";
 
-function Calculator({ handleShowCalculator }) {
+function Calculator({ handleShowCalculator, chosenAmount, handleChosen }) {
   return (
     <div className='calculator-overlay'>
       <div className='calculator'>
@@ -22,9 +22,19 @@ function Calculator({ handleShowCalculator }) {
             className='calculator-budget__slider'
             min='5'
             max='200'
+            value={chosenAmount}
+            onChange={(e) => handleChosen(e.target.value)}
           />
           <p className='calculator-budget__text'>
             <span className='calculator-budget__amount'>$5</span>
+            <span
+              className='calculator-budget__amount'
+              style={{
+                paddingLeft: `${Number(chosenAmount) + 20}px`,
+                marginRight: "auto",
+              }}>
+              {chosenAmount !== 5 && "$" + chosenAmount}
+            </span>
             <span className='calculator-budget__amount'>$200</span>
           </p>
           <p className='calculator-budget__limit'>

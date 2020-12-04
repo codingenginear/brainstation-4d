@@ -7,13 +7,17 @@ import { useState } from "react";
 function App() {
   const [showCalculator, setShowCalculator] = useState(false);
   const [showCart, setShowCart] = useState(false);
-
+  const [chosenAmount, setChosenAmount] = useState(5);
   const handleShowCalculator = () => {
     showCalculator ? setShowCalculator(false) : setShowCalculator(true);
   };
 
   const handleShowCart = () => {
     showCart ? setShowCart(false) : setShowCart(true);
+  };
+
+  const handleChosen = (value) => {
+    setChosenAmount(value);
   };
 
   return (
@@ -34,6 +38,8 @@ function App() {
                 showCalculator={showCalculator}
                 handleShowCart={handleShowCart}
                 showCart={showCart}
+                chosenAmount={chosenAmount}
+                handleChosen={handleChosen}
               />
             );
           }}

@@ -10,6 +10,8 @@ function Home({
   showCalculator,
   handleShowCart,
   showCart,
+  chosenAmount,
+  handleChosen,
 }) {
   return (
     <Fragment>
@@ -22,7 +24,11 @@ function Home({
       />
 
       {showCalculator && (
-        <Calculator handleShowCalculator={handleShowCalculator} />
+        <Calculator
+          handleShowCalculator={handleShowCalculator}
+          chosenAmount={chosenAmount}
+          handleChosen={handleChosen}
+        />
       )}
 
       {showCart && <Cart handleShowCart={handleShowCart} />}
