@@ -4,6 +4,11 @@ import backArrow from "../../assets/icons/backarrow.svg";
 import frontArrow from "../../assets/icons/frontarrow.svg";
 import reviewsIcon from "../../assets/icons/star.svg";
 import "./Product.scss";
+import infoIcon from "../../assets/icons/freepickup.svg";
+import greenCheckIcon from "../../assets/icons/greencheck.svg";
+import AdditionalInformation from "../AdditionalInformation/AdditionalInformation";
+import AddToCart from "../AddToCart/AddToCart";
+import StickyAddToCart from "../StickyAddToCart/StickyAddToCart";
 
 function Product() {
   return (
@@ -51,7 +56,36 @@ function Product() {
           </span>
           <span className='product-description__reviews-number'>(7617)</span>
         </p>
+        <p className='product-description__pricing'>$32.74</p>
+        <p className='product-description__pricing-each'>
+          <span className='product-description__pricing-each-text'>
+            31¢/each
+          </span>
+          <span className='product-description__pricing-each-icon'>
+            <img
+              src={infoIcon}
+              alt='infoIcon'
+              className='product-description__pricing-each-image'
+            />
+          </span>
+        </p>
+        <p className='product-description__store-availability'>
+          <span className='product-description__store-availability-icon'>
+            <img
+              src={greenCheckIcon}
+              alt='greenCheckIcon'
+              className='product-description__store-availability-image'
+            />
+          </span>
+          <span className='product-description__store-availability-text'>
+            Available at nearby stores
+          </span>
+        </p>
       </div>
+
+      <AdditionalInformation />
+      <AddToCart />
+      <StickyAddToCart />
     </div>
   );
 }

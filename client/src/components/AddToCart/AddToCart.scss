@@ -1,0 +1,67 @@
+@use '../../partials/typography'as *;
+
+.add-to-cart {
+  display: flex;
+  flex-direction: column;
+  padding: 0 12px;
+  margin-bottom: 8px;
+
+  &__size {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+
+  &__size-section {
+    font-size: 12px;
+    color: color(regular-black);
+  }
+
+  &__size-text {
+    font-size: 12px;
+    color: color(walmart-blue);
+    text-decoration: underline;
+  }
+
+  &__sizes {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__sizes-button {
+    width: 56px;
+    height: 27px;
+    background-color: transparent;
+    outline: none;
+    border: 1.5px solid color(regular-black);
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+
+  &__quantity {
+    display: flex;
+    align-items: center;
+  }
+
+  &__quantity-subtract {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin-right: 29px;
+  }
+
+  &__quantity-add {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin-left: 29px;
+  }
+
+  &__quantity-amount {
+    font-size: 12px;
+    color: color(regular-black);
+  }
+}

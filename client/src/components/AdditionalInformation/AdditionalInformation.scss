@@ -1,0 +1,125 @@
+@use '../../partials/typography'as *;
+
+
+.additional-information {
+  padding: 0 12px;
+  margin-bottom: 9px;
+
+  &__pickup {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  &__pickup-text {
+    font-size: 12px;
+    color: color(walmart-blue);
+  }
+
+  &__pickup-icon {
+    line-height: 0;
+    margin-right: 2px;
+  }
+
+  &__pickup-image {
+    height: 13px;
+  }
+
+  &__shipping {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  &__shipping-text {
+    font-size: 12px;
+    color: color(walmart-blue);
+  }
+
+  &__shipping-icon {
+    line-height: 0;
+    margin-right: 2px;
+  }
+
+  &__shipping-image {
+    height: 13px;
+  }
+
+  &__timeline-summary {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  &__timeline-summary-text {
+    font-size: 12px;
+    color: color(walmart-green);
+  }
+
+  &__timeline-summary-icon {
+    line-height: 0;
+    margin-right: 2px;
+  }
+
+  &__timeline-summary-image {
+    height: 13px;
+  }
+
+  &__timeline-estimate {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  &__timeline-estimate-text {
+    font-size: 12px;
+    color: color(regular-black);
+  }
+
+  &__timeline-estimate-icon {
+    line-height: 0;
+    margin-right: 15px;
+  }
+
+  &__timeline-estimate-image {
+    height: 13px;
+  }
+
+  &__more-shipping-options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  &__more-shipping-options-text {
+    font-size: 12px;
+    color: color(walmart-blue);
+    text-decoration: underline;
+  }
+
+  &__sold-by {
+    display: flex;
+    align-items: center;
+  }
+
+  &__sold-by-text {
+    font-size: 12px;
+    color: color(regular-black);
+    margin-right: 8px;
+  }
+
+  &__sold-by-logo {
+    line-height: 0;
+    margin-right: 8px;
+  }
+
+  &__sold-by-divider {
+    margin-right: 8px;
+  }
+
+  &__sold-by-returns {
+    font-size: 12px;
+    color: color(walmart-blue);
+    text-decoration: underline;
+  }
+}

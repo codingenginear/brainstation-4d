@@ -1,0 +1,30 @@
+@use '../../partials/typography'as *;
+
+.sticky-add-to-cart {
+  padding: 0 12px;
+  margin-bottom: 8px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__add {
+    width: 169.15px;
+    height: 35.51px;
+    background: color(walmart-blue);
+    border: 1px solid color(walmart-blue);
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 12px;
+  }
+
+  &__find {
+    width: 169.15px;
+    height: 35.51px;
+    border: 1px solid color(regular-black);
+    border-radius: 20px;
+    background-color: color(global-white);
+    font-size: 12px;
+  }
+}
