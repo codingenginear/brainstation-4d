@@ -5,7 +5,7 @@ import addIcon from "../../assets/icons/add.svg";
 
 function AddToCart() {
   return (
-    <div class='add-to-cart'>
+    <div className='add-to-cart'>
       <div className='add-to-cart__size'>
         <span className='add-to-cart__size-section'>Size: Size 5</span>
         <span className='add-to-cart__size-text'>See more</span>

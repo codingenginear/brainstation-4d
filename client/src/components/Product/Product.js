@@ -8,7 +8,6 @@ import infoIcon from "../../assets/icons/freepickup.svg";
 import greenCheckIcon from "../../assets/icons/greencheck.svg";
 import AdditionalInformation from "../AdditionalInformation/AdditionalInformation";
 import AddToCart from "../AddToCart/AddToCart";
-import StickyAddToCart from "../StickyAddToCart/StickyAddToCart";
 
 function Product() {
   return (
@@ -85,7 +84,6 @@ function Product() {
 
       <AdditionalInformation />
       <AddToCart />
-      <StickyAddToCart />
     </div>
   );
 }
