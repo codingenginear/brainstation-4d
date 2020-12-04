@@ -1,0 +1,10 @@
+.dashboard {
+
+  width: 100%;
+  padding: 0 1rem;
+
+  &__image {
+    object-fit: cover;
+    width: 100%;
+  }
+}

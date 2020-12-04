@@ -8,8 +8,12 @@ import question from "../../assets/icons/question.svg";
 import walmartMini from "../../assets/images/walmartlogomini.svg";
 import add from "../../assets/icons/add.svg";
 import subtract from "../../assets/icons/subtract.svg";
+import { Link } from "react-router-dom";
 
 const Cart = ({ handleShowCart }) => {
+  const handleClick = () => {
+    handleShowCart();
+  };
   return (
     <div className='cart-overlay'>
       <div className='cart-main'>
@@ -87,7 +91,12 @@ const Cart = ({ handleShowCart }) => {
             <p className='cart__subtotal'>Subtotal $32.74</p>
             <p className='cart__total-items'>1 Item</p>
             <div className='cart__button-div'>
-              <button className='cart__checkout'>Checkout</button>
+              <Link
+                to='/dashboard'
+                className='cart__checkout'
+                onClick={handleClick}>
+                Checkout
+              </Link>
               <button className='cart__continue-shopping'>
                 Continue Shopping
               </button>
