@@ -1,7 +1,12 @@
 import React, { Fragment } from "react";
+import Product from "../../components/Product/Product";
 
 function Home() {
-  return <Fragment></Fragment>;
+  return (
+    <Fragment>
+      <Product />
+    </Fragment>
+  );
 }
 
 export default Home;
