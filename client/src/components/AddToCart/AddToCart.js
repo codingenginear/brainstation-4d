@@ -7,7 +7,9 @@ function AddToCart() {
   return (
     <div className='add-to-cart'>
       <div className='add-to-cart__size'>
-        <span className='add-to-cart__size-section'>Size: Size 5</span>
+        <span className='add-to-cart__size-section'>
+          Size: <strong>Size 5</strong>
+        </span>
         <span className='add-to-cart__size-text'>See more</span>
       </div>
       <div className='add-to-cart__sizes'>
@@ -15,7 +17,9 @@ function AddToCart() {
         <button className='add-to-cart__sizes-button'>Size 2</button>
         <button className='add-to-cart__sizes-button'>Size 3</button>
         <button className='add-to-cart__sizes-button'>Size 4</button>
-        <button className='add-to-cart__sizes-button'>Size 5</button>
+        <button className='add-to-cart__sizes-button add-to-cart__sizes-button--selected'>
+          Size 5
+        </button>
         <button className='add-to-cart__sizes-button'>Size 6</button>
       </div>
       <div className='add-to-cart__quantity'>

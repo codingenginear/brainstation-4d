@@ -39,6 +39,11 @@
     font-size: 12px;
     margin-right: 8px;
     margin-bottom: 8px;
+
+    &--selected {
+      border: 1.5px solid color(walmart-blue);
+      color: color(walmart-blue);
+    }
   }
 
   &__quantity {
