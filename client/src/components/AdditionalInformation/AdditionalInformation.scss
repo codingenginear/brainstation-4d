@@ -2,13 +2,13 @@
 
 
 .additional-information {
-  padding: 0 12px;
+  padding: 0 1rem;
   margin-bottom: 9px;
 
   &__pickup {
     display: flex;
     align-items: center;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
   }
 
   &__pickup-text {
@@ -18,7 +18,7 @@
 
   &__pickup-icon {
     line-height: 0;
-    margin-right: 2px;
+    margin-right: 8px;
   }
 
   &__pickup-image {
@@ -28,7 +28,7 @@
   &__shipping {
     display: flex;
     align-items: center;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
   }
 
   &__shipping-text {
@@ -38,7 +38,7 @@
 
   &__shipping-icon {
     line-height: 0;
-    margin-right: 2px;
+    margin-right: 8px;
   }
 
   &__shipping-image {
@@ -48,7 +48,7 @@
   &__timeline-summary {
     display: flex;
     align-items: center;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
   }
 
   &__timeline-summary-text {
@@ -58,7 +58,7 @@
 
   &__timeline-summary-icon {
     line-height: 0;
-    margin-right: 2px;
+    margin-right: 8px;
   }
 
   &__timeline-summary-image {
@@ -68,7 +68,7 @@
   &__timeline-estimate {
     display: flex;
     align-items: center;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
   }
 
   &__timeline-estimate-text {
@@ -78,7 +78,7 @@
 
   &__timeline-estimate-icon {
     line-height: 0;
-    margin-right: 15px;
+    margin-right: 23px;
   }
 
   &__timeline-estimate-image {
@@ -88,7 +88,7 @@
   &__more-shipping-options {
     display: flex;
     align-items: center;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
   }
 
   &__more-shipping-options-text {

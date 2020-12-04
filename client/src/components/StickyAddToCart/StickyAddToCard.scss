@@ -1,7 +1,8 @@
 @use '../../partials/typography'as *;
 
 .sticky-add-to-cart {
-  padding: 0 12px;
+  padding: 0 1rem;
+  width: 100%;
   background-color: color(global-white);
   position: fixed;
   bottom: 0;

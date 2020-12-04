@@ -1,0 +1,227 @@
+@use '../../partials/typography'as *;
+
+
+.cart-overlay {
+  top: 0;
+  position: fixed;
+  left: 0;
+  z-index: 9999;
+  background: rgb(19 24 44 / 0.7);
+  width: 100%;
+  height: 100vh;
+
+}
+
+.cart-main {
+  width: 91.1%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: 9999;
+  background: color(global-white);
+  overflow: scroll;
+  height: 100%;
+}
+
+.cart {
+  position: relative;
+  width: 100%;
+
+  &__close {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+  }
+
+  &__header {
+    margin-top: 32px;
+    margin-left: 17px;
+    width: 216px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  &__checkmark {
+    width: 30px;
+    height: 30px;
+  }
+
+  &__checkmark-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  &__header-para-div {
+    width: 170px;
+  }
+
+  &__header-para {
+    font-size: 1rem;
+  }
+
+  &__main {
+    margin-top: 16px;
+    display: flex;
+    margin-left: 16px;
+
+  }
+
+  &__main-image {
+    margin-top: 16px;
+  }
+
+  &__main-right {
+    width: 100%;
+  }
+
+  &__main-right-header {
+    margin-left: 16px;
+    font-size: 1.2rem;
+  }
+
+  &__size {
+    margin-left: 16px;
+    margin-top: 8px;
+    font-size: 12px;
+  }
+
+  &__size-bold {
+    font-weight: bold;
+    font-size: 12px;
+
+  }
+
+  &__stars {
+    margin-top: 8px;
+    margin-left: 16px;
+    display: flex;
+  }
+
+  &__stars-img {
+    margin-right: 10px;
+    height: 18px;
+  }
+
+
+  &__price {
+    margin-top: 12px;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 16px;
+  }
+
+  &__price-per-div {
+    margin-left: 16px;
+    font-size: 12px;
+
+  }
+
+  &__price-per-question {
+    margin-top: 2px;
+  }
+
+  &__sold-by-div {
+    margin-left: 16px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__sold-by-para {
+    font-size: 12px;
+    margin-right: 2px;
+  }
+
+  &__walmart-logo-mini {
+    margin-top: 2px;
+    height: 19px;
+  }
+
+  &__quantity-div {
+    margin-top: 24px;
+    margin-left: 16px;
+  }
+
+  &__quantity {
+    font-size: 12px;
+  }
+
+  &__quantity-amount-div {
+    display: flex;
+    margin-top: 8px;
+    align-items: center;
+  }
+
+  &__minus-button {
+    height: 36px;
+    width: 50.5px;
+    margin-right: 29px;
+  }
+
+  &__plus-button {
+    height: 36px;
+    width: 50.5px;
+    margin-left: 29px;
+  }
+
+
+  &__bottom-div {
+    margin-top: 29.5px;
+    width: 91.5%;
+    margin-left: 16px;
+    border: 1px solid #000000;
+    margin-bottom: 18px;
+  }
+
+  &__subtotal {
+    margin-top: 16px;
+    margin-left: 16px;
+    font-size: 14
+  }
+
+  &__total-items {
+    margin-top: 4px;
+    margin-left: 16px;
+    font-size: 14px;
+  }
+
+  &__button-div {
+    margin-top: 26px;
+    width: 91.5%;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__checkout {
+    height: 32px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: #3070C7;
+    border: 1px solid #3070C7;
+    color: #FFFFFF;
+  }
+
+  &__continue-shopping {
+    margin-top: 26px;
+    height: 32px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    margin-bottom: 23px;
+    border: 1px solid #000000;
+    background: #FFFFFF;
+  }
+
+
+
+
+
+
+}

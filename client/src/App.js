@@ -6,9 +6,14 @@ import { useState } from "react";
 
 function App() {
   const [showCalculator, setShowCalculator] = useState(false);
+  const [showCart, setShowCart] = useState(false);
 
   const handleShowCalculator = () => {
     showCalculator ? setShowCalculator(false) : setShowCalculator(true);
+  };
+
+  const handleShowCart = () => {
+    showCart ? setShowCart(false) : setShowCart(true);
   };
 
   return (
@@ -16,6 +21,8 @@ function App() {
       <Header
         handleShowCalculator={handleShowCalculator}
         showCalculator={showCalculator}
+        handleShowCart={handleShowCart}
+        showCart={showCart}
       />
       <Switch>
         <Route
@@ -25,6 +32,8 @@ function App() {
               <Home
                 handleShowCalculator={handleShowCalculator}
                 showCalculator={showCalculator}
+                handleShowCart={handleShowCart}
+                showCart={showCart}
               />
             );
           }}

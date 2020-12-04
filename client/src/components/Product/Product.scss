@@ -20,30 +20,36 @@
 }
 
 .product-description {
-  padding: 0 12px;
+  padding: 0 1rem;
   margin-bottom: 1rem;
 
   &__title {
     font-size: 1rem;
     font-weight: bold;
-    margin-bottom: 9px;
-    line-height: 0;
+    margin-bottom: 14px;
   }
 
   &__external {
-    margin-bottom: 9px;
+    margin-bottom: 14px;
   }
 
   &__link {
     font-size: 12px;
     color: color(walmart-blue);
+    margin-bottom: 1rem;
 
+  }
+
+  &__sizes-summary {
+    font-size: 12px;
+    margin-bottom: 9px;
+    color: color(regular-black);
   }
 
   &__reviews {
     display: flex;
     align-items: center;
-    margin-bottom: 12px;
+    margin-bottom: 1rem;
     line-height: 0;
   }
 
@@ -51,12 +57,6 @@
     margin-right: 8px;
   }
 
-  &__sizes-summary {
-    font-size: 12px;
-    margin-bottom: 9px;
-    line-height: 0;
-    color: color(regular-black);
-  }
 
   &__reviews-number {
     font-size: 12px;
@@ -65,6 +65,7 @@
 
   &__pricing {
     font-size: 21px;
+    margin-bottom: 8px;
   }
 
   &__pricing-each {
@@ -100,7 +101,7 @@
 
   &__store-availability-icon {
     line-height: 0;
-    margin-right: 2px;
+    margin-right: 8px;
   }
 
   &__store-availability-image {
